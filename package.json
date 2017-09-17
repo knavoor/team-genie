@@ -4,7 +4,7 @@
   "description": "webapp to manage team, team funds, events and more..",
   "main": "index.js",
   "scripts": {
-    "start": "node_modules/.bin/nodemon index.js && npm run lint",
+    "start": "node_modules/.bin/nodemon index.js",
     "lint": "node_modules/.bin/eslint **/*.js"
   },
   "repository": {
