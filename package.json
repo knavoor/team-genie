@@ -1,0 +1,36 @@
+{
+  "name": "team-genie",
+  "version": "1.0.0",
+  "description": "webapp to manage team, team funds, events and more..",
+  "main": "index.js",
+  "scripts": {
+    "start": "node_modules/.bin/nodemon index.js && npm run lint",
+    "lint": "node_modules/.bin/eslint **/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/knavoor/team-genie.git"
+  },
+  "author": "knavoor",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/knavoor/team-genie/issues"
+  },
+  "homepage": "https://github.com/knavoor/team-genie#readme",
+  "dependencies": {
+    "body-parser": "^1.18.1",
+    "express": "^4.15.4",
+    "morgan": "^1.8.2",
+    "sequelize": "^4.8.3",
+    "sqlite3": "^3.1.11"
+  },
+  "devDependencies": {
+    "eslint": "^4.6.1",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-node": "^5.1.1",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "nodemon": "^1.12.0"
+  }
+}
