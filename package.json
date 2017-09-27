@@ -4,8 +4,8 @@
   "description": "webapp to manage team, team funds, events and more..",
   "main": "index.js",
   "scripts": {
-    "start": "node_modules/.bin/nodemon index.js",
-    "lint": "node_modules/.bin/eslint **/*.js"
+    "start": "node_modules/.bin/nodemon index.js --exec  \"npm run lint && node\"",
+    "lint": "eslint **/*.js"
   },
   "repository": {
     "type": "git",
@@ -18,9 +18,13 @@
   },
   "homepage": "https://github.com/knavoor/team-genie#readme",
   "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.18.1",
     "express": "^4.15.4",
+    "express-session": "^1.15.6",
     "morgan": "^1.8.2",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
     "sequelize": "^4.8.3",
     "sqlite3": "^3.1.11"
   },
