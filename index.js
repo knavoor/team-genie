@@ -16,7 +16,7 @@ app.use(session({
 }))
 
 require('./routes')(app)
-
+require('./passport')
 sequelize.sync({force: false})
   .then(() => {
     app.listen(config.port)

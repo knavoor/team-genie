@@ -9,6 +9,6 @@ module.exports = {
       host: process.env.HOST || 'localhost',
       storage: './teamgenie.sqlite'
     }
-
-  }
+  },
+  SALT_WORK_FACTOR: 12
 }
